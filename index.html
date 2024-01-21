@@ -1,215 +1,446 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="no-js" lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demanual</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="logo.png">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Demanual AI</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="vendor.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="modernizr.js"></script>
+    <script src="pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 
-<body>
-  <div class="bg-dark">
-    <header class="absolute inset-x-0 top-0 z-50">
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Demanual AI</span>
-            <img class="h-8 w-auto" src="logo.png" alt="">
-          </a>
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="logo.png" alt="Homepage">
+            </a>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-m font-semibold leading-6 text-gray-900">Home</a>
-          <a href="#services" class="text-m font-semibold leading-6 text-gray-900">Services</a>
-          <a href="#team" class="text-m font-semibold leading-6 text-gray-900">Our team</a>
-          <a href="#contact" class="text-m font-semibold leading-6 text-gray-900">Contact</a>
-        </div>
-        <div class="lg:flex lg:flex-1 lg:justify-end">
-          <a href="#contact" class="text-m font-semibold leading-6 text-gray-900">Let's talk <span
-              aria-hidden="true">&rarr;</span></a>
-        </div>
-      </nav>
-      <!-- Mobile menu, show/hide based on menu open state. -->
-  </div>
-  </header>
 
-  <div class="relative isolate px-6 pt-14 lg:px-8">
-    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-      <div
-        class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-      </div>
-    </div>
-    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-      <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div
-          class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-          We are a starting out on a mission <a href="#team" class="font-semibold text-indigo-600"><span
-              class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="text-center">
-        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">We're Demanual AI</h1>
-        <p class="mt-6 text-2xl font-semibold leading-8 text-gray-800">We help Influencers and businesses to connect
-          with
-          their audience/customers effectively by
-          building customized chat bots.</p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#contact"
-            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's
-            Talk</a>
-          <a href="#team" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
-              aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </div>
-    <div
-      class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-      aria-hidden="true">
-      <div
-        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-      </div>
-    </div>
-  </div>
-  </div>
+        <nav class="header-nav">
 
-  <div id="services" class="services" style="width: 80%; margin: 0 auto;">
-    <h2 style="text-align: center;" class="text-xl font-bold leading-7 text-indigo-600">Explore our</h2>
-    <h2 style="text-align: center; margin-bottom: 5vh;"
-      class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Services</h2>
-    <hr>
-    <div class="list-services" style="display: flex; justify-content: space-around; flex-wrap: wrap-reverse;">
-      <a href="#" style="max-width: 400px; margin: 3vw;" class="group relative block bg-black">
-        <img alt="Developer" src="image-influencer.jpg"
-          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
-        <div class="relative p-4 sm:p-6 lg:p-8">
-          <p class="text-m font-medium uppercase tracking-widest text-pink-500">
-            For
-          </p>
-
-          <p class="text-xl font-bold text-white sm:text-2xl">INFLUENCERS</p>
-
-          <div class="mt-32 sm:mt-48 lg:mt-64">
-            <div
-              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-              <p class="text-xl font-bold text-white">
-                We help Influencers to connect with
-                their audience effectively by
-                building customized chat bots.
-              </p>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a href="#" style="max-width: 400px;margin: 3vw" class="group relative block bg-black">
-        <img alt="Developer" src="image-business.jpg"
-          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
-
-        <div class="relative p-4 sm:p-6 lg:p-8">
-          <p class="text-m font-medium uppercase tracking-widest text-pink-500">
-            For
-          </p>
-
-          <p class="text-xl font-bold text-white sm:text-2xl">BUSINESSES</p>
-
-          <div class="mt-32 sm:mt-48 lg:mt-64">
-            <div
-              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-              <p class="text-xl font-bold text-white">
-                We help businesses build customized chat bots to make iterative processes effecient, like customer
-                onboarding, customer relations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div id="team" class="bg-white py-24 sm:py-32">
-    <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">We are a small team of extremely passionate individuals. We trust on the energy we bring into your business.</p>
-      </div>
-      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-
-
-        <li>
-          <div class="flex items-center gap-x-6">
-            <img class="h-24 w-24 rounded-full"
-              src="https://img.freepik.com/free-photo/rise-humanoids-with-advanced-headgear-generative-ai_8829-2877.jpg?size=626&ext=jpg&ga=GA1.1.1585148055.1698857451&semt=sph"
-              alt="">
-            <div>
-              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Sanjay Rajaraman</h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">Artificial Intelligence Engineer</p>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="flex items-center gap-x-6">
-            <img class="h-24 w-24 rounded-full"
-              src="https://img.freepik.com/free-photo/woman-with-robot-head-helmet-that-says-robot-it_1340-39428.jpg?size=626&ext=jpg&ga=GA1.1.1585148055.1698857451&semt=sph"
-              alt="">
-            <div>
-              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Shivapriya PS</h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">Data Analyst</p>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="flex items-center gap-x-6">
-            <img class="h- w-24 rounded-full"
-              src="https://img.freepik.com/free-photo/ai-cloud-concept-with-robot-arm_23-2149739748.jpg?size=626&ext=jpg&ga=GA1.1.1585148055.1698857451&semt=sph"
-              alt="">
-            <div>
-              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Developers team</h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">team of full stack developers</p>
-            </div>
-          </div>
-        </li>
-        <!-- More people... -->
-      </ul>
-    </div>
-  </div>
-
-  <div id="contact" class="contact" style="font-size: 10vw;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 79%;
-      letter-spacing: -0.37px;
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="clients">Clients</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
     
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin-left: 14vw;
-      margin-bottom: 10vh;
-      
-      flex-shrink: 0;">
-    <a href="https://calendly.com/demanual-team/scheduled-meeting"><span class="text-gray-600 hover:text-indigo-500">Let us <br> work together</span></a>
-  </div>
+                <p><a href='#0'>Elevate with AI: </a>Chatbots, Automation, Sales Funnels, Vision Solutions for Industries</p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </li>
 
-  <footer class="bg-gray-50">
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-      <div class="sm:flex sm:items-center sm:justify-between">
-        <div class="flex justify-center text-grey-600 sm:justify-start">
-          DEMANUAL AI
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Welcome to Demanual.AI</h3>
+
+                <h1>
+                    Transforming Small Businesses <br>
+                    with AI Innovation and Precision. <br>
+                    Crafting Solutions Tailored for Success. <br>
+                    Your Future, Enhanced by <span style="color: #005EFF;">Demanual</span>
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        Start a Project
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Us
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-youtube" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">Hello There</h3>
+                <h1 class="display-1 display-1--light">We Are Demanual.AI</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p class="drop-cap" style="color: #ffffff;">
+                    At Demanual AI, our dynamic team of AI enthusiasts is driven by a shared passion for innovation and excellence. With expertise ranging from crafting intuitive AI chatbots to streamlining processes through automation, and designing effective sales funnels, we specialize in delivering cutting-edge solutions tailored for small businesses and industries alike. Our commitment extends to providing vision-based solutions that redefine industry standards. Backed by a blend of creativity and technical prowess, we take pride in transforming challenges into opportunities, ensuring your business thrives in the evolving landscape of artificial intelligence. 
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+        
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What We Do</h3>
+                <h1 class="display-2">Empowering Your Business Journey: From Inception to Ascension, We've Got Your Growth Covered</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-chat"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">AI Chatbots</h3>
+                    <p>Enhance customer engagement and support with our AI chatbot solutions. From answering queries to providing personalized recommendations, our chatbots offer a seamless and interactive experience for your users.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-network"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">AI Automation</h3>
+                    <p>Streamline your business processes and boost efficiency through AI automation. Our tailored solutions automate repetitive tasks, allowing your team to focus on strategic initiatives and driving overall productivity.</p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-eye"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Vision-Based Solutions for Industries</h3>
+                    <p>Revolutionize your industry with our vision-based solutions. Harnessing the power of computer vision and AI, we provide innovative solutions for quality control, process optimization, and data analysis, ensuring your business stays at the forefront of technological advancements
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-suitcase"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">AI Sales Funnels</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- clients
+    ================================================== -->
+    <section id="clients" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Clients</h3>
+                <h1 class="display-2">Demanual has been honored to
+                partner up with these clients</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+      
+        <div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+                <div class="testimonials">
+
+                    <div class="testimonials__slide">
+
+                        <p>DemanualAI didn't just upgrade our industry processes; they gave us a crystal ball. Their vision-based solutions are like magic, improving our efficiency and quality control. Plus, working with them feels like collaborating with friends who just happen to be geniuses in AI.</p>
+
+                        <img src="user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Sindhu</span> 
+                            <span class="testimonials__pos">Chennai, Tamilnadu</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+                        
+                        <p>Efficiency reached a new high with DemanualAI's AI automation. The team not only knows their tech but also gets the human side of operations. It's like having a tech-savvy friend helping you out. Highly recommend for a smoother, smarter workflow.</p>
+
+                        <img src="user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Vinoth kumar</span> 
+                            <span class="testimonials__pos">NRS solutions</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+                        
+                        <p>Thanks to Demanual team, our small business now feels big! The AI chatbot they set up not only wows our customers but also gives us more time to focus on what matters most—our products. They're not just experts; they're partners who genuinely care about our success</p>
+
+                        <img src="user-03.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Karthikeyan Viswanathan</span> 
+                            <span class="testimonials__pos">CEO, Razolink</span>
+                        </div>
+
+                    </div>
+
+                </div><!-- end testimonials -->
+                
+            </div> <!-- end col-full -->
+        </div> <!-- end client-testimonials -->
+
+    </section> <!-- end s-clients -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact Us</h3>
+                <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
+            </div>
         </div>
 
-        <p class="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
-          Copyright &copy; 2023. All rights reserved.
-        </p>
-      </div>
+        <div class="row contact-content" data-aos="fade-up">
+            
+            <div id="contact" class="contact" style="font-size: 10vw;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 79%;
+                letter-spacing: -0.37px;
+              
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                
+                flex-shrink: 0;">
+              <a href="https://calendly.com/demanual-team/scheduled-meeting"><span class="text-gray-600 hover:text-indigo-500">Let's <br> Connect </span></a>
+            </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
+                <div class="footer-logo"></div>
+                Our team is dedicated to delivering excellence, ensuring that your journey in the ever-evolving business landscape is not only seamless but also transformative. Trust us to provide the expertise and support essential for your business to thrive.
+
+            </div>
+
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h4>Get Notified</h4>
+               
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
+
+            </div>
+
+        </div> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright DemanualAI.in 2024</span> 
+                </div>
+
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </div>
-  </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="plugins.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
